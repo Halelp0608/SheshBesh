@@ -41,6 +41,8 @@
 
 .card {
     box-shadow: 0px 4px 8px 0px #BDBDBD;
+    width: 500px;
+    height:500px;
 }
 
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
@@ -102,6 +104,7 @@ button:focus {
     .item {
         display: block !important;
     }
+
 }  
     </style>  
     <script>
@@ -191,33 +194,41 @@ button:focus {
         <div class="item first prev">
             <div class="card border-0 py-3 px-4">
                 <div class="row justify-content-center">
-                    <img src="https://i.imgur.com/gazoShk.jpg" class="img-fluid profile-pic mb-4 mt-3">
+                    <img src="src/img1.jpg" class="img-fluid profile-pic mb-4 mt-3">
                 </div>
             </div>
         </div>
         <div class="item show">
             <div class="card border-0 py-3 px-4">
                 <div class="row justify-content-center">
-                    <img src="https://i.imgur.com/oW8Wpwi.jpg" class="img-fluid mb-4 mt-3">
+                    <img src="src/img2.jpg" class="img-fluid profile-pic mb-4 mt-3">
                 </div>
             </div>
         </div>
         <div class="item next">
             <div class="card border-0 py-3 px-4">
                 <div class="row justify-content-center">
-                    <img src="https://i.imgur.com/ndQx2Rg.jpg" class="img-fluid mb-4 mt-3">
+                    <img src="src/img3.jpg" class="img-fluid profile-pic mb-4 mt-3">
                 </div>
             </div>
         </div>
         <div class="item last">
             <div class="card border-0 py-3 px-4">
                 <div class="row justify-content-center">
-                    <img src="https://i.imgur.com/T5aOhwh.jpg" class="img-fluid mb-4 mt-3">
+                    <img src="src/img4.jpg" class="img-fluid profile-pic mb-4 mt-3">
                 </div>
             </div>
         </div>
+
+      </div>
     </div>
-</div>
+
+        
+        <div class="text-center">
+        <p class="font-weight-normal" style="font-family:'Mystical Woods'">don't now how to play?</p>
+        <a class="btn btn-outline-secondary" href="instructions.aspx">click here</a>
+            <br /><br />
+        </div>
    
 
 </asp:Content>

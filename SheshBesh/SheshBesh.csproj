@@ -117,6 +117,12 @@
     <Content Include="src\cubes.jpg" />
     <Content Include="src\dog.jpg" />
     <Content Include="src\flamingo.jpg" />
+    <Content Include="src\full-board.jpg" />
+    <Content Include="src\Img1.jpg" />
+    <Content Include="src\img2.jpg" />
+    <Content Include="src\img3.jpg" />
+    <Content Include="src\img4.jpg" />
+    <Content Include="src\logo.jpg" />
     <Content Include="src\MysticalWoodsSmoothScript\style.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />

@@ -78,8 +78,7 @@
                     <img src="src/crown.png" class="rounded-circle" width="150">
                     <div class="mt-3">
                       <h4>John Doe</h4>
-                      <p class="text-secondary mb-1">Junior</p>
-                        <asp:Button ID="Button1" class="btn btn-primary" runat="server"
+                          <asp:Button ID="Button1" class="btn btn-primary" runat="server"
                             OnClick="Button1_Click" Text="swich image" />
                         
                     </div>

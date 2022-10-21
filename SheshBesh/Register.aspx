@@ -50,7 +50,7 @@ select.form-control {
     <div class="row py-5 mt-4 align-items-center">
         <!-- For Demo Purpose -->
         <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
-            <img src="src/cubes.jpg" class="img-fluid mb-3 d-none d-md-block" />
+            <img src="src/logo.jpg" class="img-fluid mb-3 d-none d-md-block" />
                    <h2>Create an Account</h2>
             <p class="font-italic text-muted mb-0">Sign in to win your friend in SheshBesh,  and turn to be the best player in the whole time!</p>
         </div>
