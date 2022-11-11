@@ -43,9 +43,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.4.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.4.3\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
@@ -69,6 +66,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -103,6 +101,8 @@
     <Content Include="Home.aspx" />
     <Content Include="instructions.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="onlineUsers.aspx" />
+    <Content Include="popUp.aspx" />
     <Content Include="profile.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -111,7 +111,6 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="showUsers.aspx" />
     <Content Include="src\board.jpg" />
     <Content Include="src\crown.png" />
     <Content Include="src\cubes.jpg" />
@@ -129,6 +128,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\DAL.cs" />
+    <Compile Include="App_Code\imagesLogic.cs" />
+    <Compile Include="App_Code\LevelsLogic.cs" />
     <Compile Include="App_Code\ProudactLogic.cs" />
     <Compile Include="App_Code\UsersLogic.cs" />
     <Compile Include="Home.aspx.cs">
@@ -152,6 +153,20 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="onlineUsers.aspx.cs">
+      <DependentUpon>onlineUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onlineUsers.aspx.designer.cs">
+      <DependentUpon>onlineUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="popUp.aspx.cs">
+      <DependentUpon>popUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="popUp.aspx.designer.cs">
+      <DependentUpon>popUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="profile.aspx.cs">
       <DependentUpon>profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -166,13 +181,6 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="showUsers.aspx.cs">
-      <DependentUpon>showUsers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="showUsers.aspx.designer.cs">
-      <DependentUpon>showUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

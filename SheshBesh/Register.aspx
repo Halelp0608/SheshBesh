@@ -39,13 +39,19 @@ select.form-control {
 .form-control:focus {
     box-shadow: none;
 }
+
+.a{
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
     </style>
 
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!--body-->
-
+    <form runat="server">
     <div class="container">
     <div class="row py-5 mt-4 align-items-center">
         <!-- For Demo Purpose -->
@@ -57,7 +63,6 @@ select.form-control {
 
         <!-- Registeration Form -->
         <div class="col-md-7 col-lg-6 ml-auto">
-            <form runat="server">
                 <div class="row">
 
                     <!-- nickName -->
@@ -90,12 +95,8 @@ select.form-control {
                                                         
                         </div>
                         <asp:DropDownList ID="level" runat="server"
-                            class="form-control bg-white border-left-0 border-md">
-                            <asp:ListItem Value="">Choose level</asp:ListItem>
-                            <asp:ListItem Value="junior">Junior</asp:ListItem>
-                            <asp:ListItem Value="Senior">Senior</asp:ListItem>
-                            <asp:ListItem Value="Expert">Expert</asp:ListItem>
-                           </asp:DropDownList>
+                            class="form-control bg-white border-left-0 border-md a">
+                        </asp:DropDownList>
                             <span class="input-group-text bg-white px-4 border-md border-right-0">
                                <i class="fa fa-sort"></i> </span>
 
@@ -136,10 +137,10 @@ select.form-control {
                     
                 </div>
      
-            </form>
         </div>
     </div>
 </div>
+</form>
 
 
 </asp:Content>

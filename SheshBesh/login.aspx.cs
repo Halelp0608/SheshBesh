@@ -20,7 +20,8 @@ namespace SheshBesh
             UsersLogic ul = new UsersLogic();
             if (ul.isDetailsCorrect(nickName.Text, password.Text))
             {
-                //Response.Redirect(#);
+                Response.Redirect("onlineUsers.aspx");
+
             }
             else
             {

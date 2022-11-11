@@ -55,6 +55,11 @@
 .shadow-none {
     box-shadow: none!important;
 }
+
+.a{
+    font-family:'Mystical Woods';
+    font-size:70px;
+}
     </style>
     <script>
         
@@ -70,14 +75,14 @@
             <div class="col-md-4 mb-3">
               <div class="card">
                    <div style="text-align:center;">
-                  <h2 style="font-family:'Mystical Woods'">hi #nick name</h2>
-                <p>nice to see you here!</p>
+                      <asp:Label ID="bigName" runat="server" Text=""></asp:Label>
+                      <p>nice to see you here!</p>
               </div>
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
-                    <img src="src/crown.png" class="rounded-circle" width="150">
+                      <asp:Image ID="Image1" runat="server" ImageUrl="src/crown.png" class="rounded-circle" width="150"/>
                     <div class="mt-3">
-                      <h4>John Doe</h4>
+                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                           <asp:Button ID="Button1" class="btn btn-primary" runat="server"
                             OnClick="Button1_Click" Text="swich image" />
                         
@@ -95,7 +100,7 @@
                       <h6 class="mb-0">NickName</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      #nickName
+                        <asp:Label ID="nickname" runat="server" Text=""></asp:Label>
                     </div>
                   </div>
                   <hr>
@@ -104,10 +109,18 @@
                       <h6 class="mb-0">Email</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      #email
+                        <asp:Label ID="email" runat="server" Text=""></asp:Label>
                     </div>
                   </div>
                   <hr>
+                    <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Password</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <asp:Label ID="password" runat="server" Text=""></asp:Label>
+                    </div>
+                  </div>
                   <div class="row">
                     <div class="col-sm-12">
                       <a class="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
@@ -120,7 +133,7 @@
                 <div class="col-sm-6 mb-3">
                   <div class="card h-100">
                     <div class="card-body">
-                      <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">assignment</i>My games</h6>
+                      <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">assignment</i>My last games</h6>
                       <small>Web Design</small>
                       <div class="progress mb-3" style="height: 5px">
                         <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
@@ -179,5 +192,7 @@
           </div>
 
         </div>
-    </div></form>
+    </div>
+
+  </form>
 </asp:Content>

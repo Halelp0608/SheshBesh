@@ -225,7 +225,7 @@ button:focus {
 
         
         <div class="text-center">
-        <p class="font-weight-normal" style="font-family:'Mystical Woods'">don't now how to play?</p>
+        <p class="font-weight-normal" style="font-family:'Mystical Woods'">don't now know to play?</p>
         <a class="btn btn-outline-secondary" href="instructions.aspx">click here</a>
             <br /><br />
         </div>

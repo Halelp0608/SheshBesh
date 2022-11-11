@@ -6,16 +6,14 @@ using System.Web;
 
 namespace SheshBesh.App_Code
 {
-    public class ProudactLogic
+    public class LevelsLogic
     {
-       private DAL dal = new DAL();
-
-        public DataTable getProudacts()
+        private DAL dal = new DAL();
+        public DataTable getLevels()
         {
-            string sql = "SELECT * FROM proudact";
+            string sql = "SELECT * FROM levels";
             return dal.sendQuery(sql);
-            
-
         }
+
     }
 }

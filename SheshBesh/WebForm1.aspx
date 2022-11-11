@@ -192,9 +192,10 @@ a:hover {
 						</ul>
 					</div>
 					<div class="part-2">
-						<h3 class="product-title">Here Product Title</h3>
+						<h3 class="product-title"><%# Eval("nameP")%></h3>
 						<h4 class="product-old-price">$79.99</h4>
-						<h4 class="product-price">$49.99</h4>
+                        <asp:Label ID="Label1" runat="server" Text="Eval(price)"></asp:Label>
+						<h4 class="product-price"><%# Eval("price") %></h4>
 					</div>
 			
 		

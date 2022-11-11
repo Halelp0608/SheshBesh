@@ -6,9 +6,10 @@ namespace SheshBesh.App_Code
     {
         private DAL dal = new DAL();
 
-        public void addNewUser(string nickName, string email, string password, string level)
+        public void addNewUser(string nickName, string email, string password, int level)
         {
-            string sql = $"INSERT INTO users VALUES('{nickName}','{email}','{password}','{level}');";
+
+            string sql = $"INSERT INTO users VALUES('{nickName}','{email}','{password}',{level},2,0);";
             dal.sendQuery(sql);
         }
 
@@ -29,9 +30,11 @@ namespace SheshBesh.App_Code
 
         }
 
-        public DataTable getUsers()
+        public DataTable getUser(string nickName)
         {
-            string sql = "SELECT * FROM users";
+            string sql = "SELECT users.nickName, users.email, users.password, levels.level, images.src, users.score" +
+                "         FROM levels, images, users " +
+                $"        WHERE levels.code = users.level AND images.code = users.image AND users.nickName='{nickName}'; ";
             return dal.sendQuery(sql);
         }
 
